@@ -9,31 +9,28 @@
 }
 
 body{
-    background-color: bisque;
+    background-color: #fdedcb;
 }
 
 .header{
-    background-color: #74600b93;
+    background-color: #f08364;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    height: 85px;
+    height: 10%;
     padding: 5px 10%;
 }
 
 .header .logo{
     cursor: pointer;
+    margin-right: auto;
 }
 
 .header .logo img{
     height: 70px;
     width: auto;
-    transition: all 0.3s;
 }
 
-.header .logo img:hover{
-    transform: scale(1.2);
-}
 
 .header .nav-links{
     list-style: none;
@@ -59,6 +56,7 @@ body{
 }
 
 .header .btn button{
+    margin-left: 20px;
     font-weight: 700;
     color: #1b3039;
     padding: 9px 25px;
