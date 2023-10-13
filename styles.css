@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #fdedcb;
+  background-color: #FEF8EB;
 }
 
 .header {
@@ -81,18 +81,17 @@ body {
 }
 
 .content {
-  background-color: #FCE4B0;
+  background-color: #FDF1D8;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   margin: 3% 0% 3% 0%;
   font-family: Arial, Helvetica, sans-serif;
-  font color: ;
 }
 
 #bee_recolector {
-  height: 100%;
-  width: 100%;
+  height: 20rem;
+  width: auto;
   padding: 3% 3% 3% 3%;
 }
  #bee_recolector_description{
@@ -101,17 +100,39 @@ body {
   font-weight: lighter    ;
  }
 
+ #productos{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+ }
+
  .productos_titulo {
+  margin: 5% 5% 0% 5%;
   text-align: center;
+  font-size: 25px;
+  font-family: "BakoSapi";
+
  }
 
  .productos_galeria{
-  margin: 5px;
+  margin: 5%;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 20%;
+  background-color: #ffffffff;
  }
  .productos_galeria:hover{
   border: 1px solid #777;
  }
 
+ .productos_galeria img {
+  width: 100%;
+  height: auto;
+}
+
+.productos_galeria .desc {
+  padding: 30px 15px 40px 15px;
+  text-align: center;
+  font-family: "BakoSapi";
+  color: rgb(179, 140, 13);
+}
