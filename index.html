@@ -13,7 +13,10 @@
 
     <link rel="icon" type="image/png" href="img/icon_bee.png" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -34,10 +37,10 @@
       <div id="mobile-menu" class="overlay">
         <a onclick="closeNav()" href="" class="close">&times;</a>
         <div class="overlay-content">
-          <a href="#productos">Productos</a>
-          <a href="#">Recetas</a>
-          <a href="#">Sobre Nosotros</a>
-          <a href="#">Inicia Sesión</a>
+          <a onclick="closeNav()" href="#productos">Productos</a>
+          <a onclick="closeNav()" href="#">Recetas</a>
+          <a onclick="closeNav()" href="#">Sobre Nosotros</a>
+          <a onclick="closeNav()" href="#">Inicia Sesión</a>
         </div>
       </div>
     </header>
@@ -139,7 +142,7 @@
     </div>
 
     <a
-      href="https://wa.me/573223633175?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"
+      href="https://api.whatsapp.com/send/?phone=573223633175&text=Me+gustar%C3%ADa+saber+m%C3%A1s+sobre+sus+productos!&type=phone_number&app_absent=0"
       class="whatsapp"
       target="_blank"
     >
@@ -148,4 +151,36 @@
 
     <script type="text/javascript" src="nav.js"></script>
   </body>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Enlaces Rápidos:</h4>
+        <ul>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#">Recetas</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Inicia Sesión</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contacto:</h4>
+        <p>Teléfono: (+57) 3223633175</p>
+        <p>Correo electrónico: santuarios.api@gmail.com</p>
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </html>
