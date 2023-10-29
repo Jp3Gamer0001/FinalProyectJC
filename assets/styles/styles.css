@@ -1,27 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
 @font-face {
-  font-family: 'Mommy Talk'; 
-  src: url('../fonts/Mommy\ Talk.ttf') format('truetype');
+  font-family: "Mommy Talk";
+  src: url("../fonts/Mommy\ Talk.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Bako Sapi'; 
-  src: url('../fonts/BaksoSapi.otf') format('OpenType');
+  font-family: "Bako Sapi";
+  src: url("../fonts/BaksoSapi.otf") format("OpenType");
 }
 
-@import 'whatsapp.css';
+@import "../styles/whatsapp.css";
+@import "../styles/footer.css";
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
-  background-color: #FEF8EB;
+body {
+  background-color: #fef8eb;
   min-width: 400px;
 }
 
-.header{
+.header {
   background-color: #f08364;
   display: flex;
   justify-content: flex-end;
@@ -29,49 +30,50 @@ body{
   height: 110px;
   padding: 5px 10%;
   font-size: 25px;
-  font-family: 'Mommy Talk';
+  font-family: "Mommy Talk";
 }
 
-.header .logo{
+.header .logo {
   cursor: pointer;
   margin-right: auto;
 }
 
-.header .logo img{
+.header .logo img {
   height: 100px;
   width: auto;
   transition: all 0.3s;
 }
 
-.header .nav-links{
+.header .nav-links {
   list-style: none;
   transition: all 0.5s;
 }
 
-.header .nav-links li{
+.header .nav-links li {
   display: inline-block;
-  padding: 0 20px;    
+  padding: 0 20px;
 }
 
 .header .nav-links li:hover,
-/**/.overlay a:hover{
+/**/.overlay a:hover {
   transform: scale(1.1);
 }
 
-.header .nav-links a{
+.header .nav-links a {
   font-size: 700;
-  color: #eceff1; 
+  color: #eceff1;
 }
 
-.header .nav-links a:hover{
+.header .nav-links a:hover {
   color: #ffbc0e;
 }
 
 .menu {
-  display:none;
+  display: none;
 }
 
-.header .btn button, .header .menu button{
+.header .btn button,
+.header .menu button {
   margin-left: 20px;
   font-weight: 700;
   color: #1b3039;
@@ -82,25 +84,26 @@ body{
   cursor: pointer;
   transition: all 0.3s ease 0s;
   font-size: 21px;
-  font-family: 'Mommy Talk';
+  font-family: "Mommy Talk";
 }
 
 .header .btn button:hover,
-.header .menu button:hover{
+.header .menu button:hover {
   background-color: #e2f1f8;
   color: #ffbc0e;
   transform: scale(1.1);
 }
 
-
-/**/@media screen and (max-width: 800px) {
-  .nav-links, .btn {
-      display: none;
+/**/
+@media screen and (max-width: 800px) {
+  .nav-links,
+  .btn {
+    display: none;
   }
   .menu {
-      display: inherit;
+    display: inherit;
   }
-  .header .logo img{
+  .header .logo img {
     height: 84px;
     width: auto;
   }
@@ -108,9 +111,9 @@ body{
 
 /*Nav Mobile*/
 
-.header a{
-  text-decoration: none;  
-  /*borramos el que teniamos en .header .nav-links a*/ 
+.header a {
+  text-decoration: none;
+  /*borramos el que teniamos en .header .nav-links a*/
 }
 
 .header .overlay {
@@ -120,20 +123,20 @@ body{
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: rgba(33, 49, 63, .95);
+  background-color: rgba(33, 49, 63, 0.95);
   overflow: hidden;
   transition: all 0.3s ease 0s;
 }
 
-.header .overlay .overlay-content{
+.header .overlay .overlay-content {
   display: flex;
   height: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;    
+  justify-content: center;
 }
 
-.header .overlay a{
+.header .overlay a {
   padding: 15px;
   font-size: 36px;
   display: block;
@@ -142,33 +145,33 @@ body{
   color: #eceff1;
 }
 
-.header .overlay a:hover, 
-.header .overlay a:focus{
+.header .overlay a:hover,
+.header .overlay a:focus {
   color: #ffbc0e;
 }
 
-.header .overlay .close{
+.header .overlay .close {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 65px;
 }
 
-@media screen and (max-height:1000px) (max-width:950px)  {
-  .header .overlay a{
-      font-size: 20px;
+@media screen and (max-height: 1000px) and (max-width: 950px) {
+  .header .overlay a {
+    font-size: 20px;
   }
-  .header .overlay .close{
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
+  .header .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 
 /* recolector de miel banner */
 
 .inicio_contenido {
-  background-color: #FDF1D8;
+  background-color: #fdf1d8;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -202,7 +205,6 @@ body{
   }
 }
 
-
 /* Titulo de la galeria */
 .titulos_centrados {
   margin: 5% 5% 0% 5%;
@@ -225,8 +227,7 @@ div.gallery {
   font-family: "Bako Sapi";
   margin: 4% 5% 5% 5%;
   text-align: center; /* Centra el contenido horizontalmente */
-  background-color: #FDF1D8;
-
+  background-color: #fdf1d8;
 }
 
 div.gallery:hover {
@@ -241,7 +242,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
-  background-color: #FDF1D8;
+  background-color: #fdf1d8;
 }
 
 /* Estilos para dispositivos móviles (menos de 768px) */
@@ -267,110 +268,30 @@ div.desc {
 
 /* Whatsapp icon*/
 .whatsapp {
-  position:fixed;
-  width:70px;
-  height:70px;
-  bottom:30px;
-  right:30px;
-  background-color:#25d366;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-  font-size:40px;
-  z-index:100;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  z-index: 100;
 }
 
 .whatsapp-icon {
-  margin-top:13px;
+  margin-top: 13px;
 }
 
 @media (max-width: 768px) {
   .whatsapp {
-  bottom:45px;
-  right: 20px;
+    bottom: 45px;
+    right: 20px;
   }
 }
 
-/* Footer */
-/* Estilos generales para el footer */
 .footer {
-  background-color: #876A98 ;
-  color: #fff;
-  padding: 20px 0;
-  font-family: Arial, sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  font-family: 'Bako Sapi';
-}
-
-/* Estilos para las secciones del footer */
-.footer-section {
-  flex: 1;
-  padding: 10px;
-}
-
-.footer-section h4 {
-  font-size: 20px;
-  margin: 3% 3% 3% 0%;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 8px;
-}
-
-/* Estilos para los enlaces */
-.footer-section a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-.footer-section a:hover {
-  color: #ffbc0e;
-}
-
-.social_media{
-  width: auto;
-  height: 500px;
-}
-
-.social-icons {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.social-icons li {
-  margin-right: 10px;
-}
-
-.social-icons a {
-  text-decoration: none;
-  color: #333; /* Cambia el color de los icon
-
-
-/* Estilos para la respuesta responsive */
-@media screen and (max-width: 768px) {
-  .footer-container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .footer-section {
-      flex: none;
-      text-align: center;
-  }
+  background-color: #876a98;
 }
