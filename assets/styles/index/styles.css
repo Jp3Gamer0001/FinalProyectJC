@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
 @font-face {
   font-family: "Mommy Talk";
-  src: url("../fonts/Mommy\ Talk.ttf") format("truetype");
+  src: url("../../fonts/Mommy\ Talk.ttf") format("truetype");
 }
 @font-face {
   font-family: "Bako Sapi";
-  src: url("../fonts/BaksoSapi.otf") format("OpenType");
+  src: url("../../fonts/BaksoSapi.otf") format("OpenType");
 }
 
-@import "../styles/whatsapp.css";
-@import "../styles/footer.css";
+@import "whatsapp.css";
+@import "footer.css";
 
 * {
   box-sizing: border-box;
