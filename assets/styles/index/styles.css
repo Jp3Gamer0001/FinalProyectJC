@@ -223,9 +223,9 @@ body {
 
 div.gallery {
   border: 1px solid #ccc;
-  width: 250px;
+  width: 300px;
   font-family: "Bako Sapi";
-  margin: 4% 5% 5% 5%;
+  margin: 4% 3% 4% 3%;
   text-align: center; /* Centra el contenido horizontalmente */
   background-color: #fdf1d8;
 }
@@ -298,13 +298,24 @@ div.desc {
 
 /* About us  */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+.about_us {
+  background-image: url(/assets/img/Finca_blur.png);
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  height: 300px;
+}
+
+.about_us,
+#About_us_banner {
+  display: block;
+  margin: auto; /* Centra horizontalmente */
+  max-width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
 }
 
 .grid-section {
   display: grid;
+
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 20px;
   padding: 20px;
@@ -314,9 +325,72 @@ body {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
+  font-family: Bako Sapi;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+/* Pie de pagina */
+
+.pie-pagina {
+  width: 100%;
+  background-color: #785C84;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #614B6C;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #614B6C;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
 }
