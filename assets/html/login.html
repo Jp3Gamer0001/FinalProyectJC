@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Página de Registro</title>
-  <link rel="stylesheet" href="../styles/login/login_main.css">
+  <head>
+    <title>Página de Registro</title>
+    <link rel="stylesheet" href="../styles/login/login_main.css" />
 
-  <script>
-    function guardarInformacion() {
-      var nombres = document.getElementById("nombres").value;
-      var apellidos = document.getElementById("apellidos").value;
-      var correo = document.getElementById("correo").value;
-      var contraseña = document.getElementById("contraseña").value;
-      var género = document.getElementById("género").value;
+    <script>
+      function guardarInformacion() {
+        var nombres = document.getElementById("nombres").value;
+        var apellidos = document.getElementById("apellidos").value;
+        var correo = document.getElementById("correo").value;
+        var contraseña = document.getElementById("contraseña").value;
+        var género = document.getElementById("género").value;
 
-      // Guardar la información en el localStorage
-      localStorage.setItem("nombres", nombres);
-      localStorage.setItem("apellidos", apellidos);
-      localStorage.setItem("correo", correo);
-      localStorage.setItem("contraseña", contraseña);
-      localStorage.setItem("género", género);
+        // Guardar la información en el localStorage
+        localStorage.setItem("nombres", nombres);
+        localStorage.setItem("apellidos", apellidos);
+        localStorage.setItem("correo", correo);
+        localStorage.setItem("contraseña", contraseña);
+        localStorage.setItem("género", género);
 
-      alert("¡Registro exitoso!");
-    }
-  </script>
-</head>
-<body>
-  <h1>Página de Registro</h1>
+        alert("¡Registro exitoso!");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Página de Registro</h1>
 
-  <form>
-    <label for="nombres">Nombres:</label>
-    <input type="text" id="nombres" required><br>
+    <form>
+      <label for="nombres">Nombres:</label>
+      <input type="text" id="nombres" required /><br />
 
-    <label for="apellidos">Apellidos:</label>
-    <input type="text" id="apellidos" required><br>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" required /><br />
 
-    <label for="correo">Correo Electrónico:</label>
-    <input type="email" id="correo" required><br>
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" required /><br />
 
-    <label for="contraseña">Contraseña:</label>
-    <input type="password" id="contraseña" required><br>
+      <label for="contraseña">Contraseña:</label>
+      <input type="password" id="contraseña" required /><br />
 
-    <label for="género">Género:</label>
-    <select id="género">
-      <option value="masculino">Masculino</option>
-      <option value="femenino">Femenino</option>
-      <option value="otro">Otro</option>
-    </select><br>
+      <label for="género">Género:</label>
+      <select id="género">
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option></select
+      ><br />
 
-    <button type="button" onclick="guardarInformacion()">Registrarse</button>
-  </form>
-<a href="../../index.html">Pagina principal</a>
-</body>
+      <button type="button" onclick="guardarInformacion()">Registrarse</button>
+      <a id="bttn" href="../../index.html">Pagina principal</a>
+    </form>
+  </body>
 </html>

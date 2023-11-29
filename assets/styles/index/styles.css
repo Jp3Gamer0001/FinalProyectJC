@@ -300,7 +300,7 @@ div.desc {
 /* About us  */
 
 .about_us {
-  background-image: url(./assets/img/Finca_blur.png);
+  background-image: url(../../img/Finca_blur.png);
   background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
   background-position: center; /* Centra la imagen dentro del contenedor */
   height: 300px;
@@ -314,10 +314,10 @@ div.desc {
   height: auto; /* Permite que la altura se ajuste automáticamente */
 }
 
-
 .titulos_centrados + p {
   text-align: center;
-  margin: 2%;
+  font-family: Arial;
+  font-size: 23px;
 }
 
 h3 {
@@ -329,7 +329,13 @@ h3 {
 #historia,
 h3,
 p {
-  margin-bottom: 20px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+#historia,
+h3 {
+  font-size: 30px;
 }
 
 /* Crear columnas */
@@ -343,7 +349,7 @@ p {
   margin: 5%;
 }
 
-#collage{
+#collage {
   display: block;
   margin: auto; /* Centra horizontalmente */
   max-width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
