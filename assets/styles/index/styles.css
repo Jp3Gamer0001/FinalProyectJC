@@ -314,6 +314,18 @@ div.desc {
   height: auto; /* Permite que la altura se ajuste automáticamente */
 }
 
+.Nuestra_Historia{
+  text-align: center;
+  font-size: 35px;
+  font-family: "Bako Sapi";
+  padding-bottom: 2%;
+}
+
+.about_us_container{
+  margin-top: 5%;
+}
+
+
 .titulos_centrados + p {
   text-align: center;
   font-family: Arial;
@@ -329,8 +341,9 @@ h3 {
 #historia,
 h3,
 p {
-  margin: 20px;
-  font-size: 20px;
+  margin: 0% 5% 5% 7%;
+  font-family: Arial;
+  font-size: 23px;
 }
 
 #historia,
@@ -342,18 +355,38 @@ h3 {
 .column-container {
   display: flex;
   justify-content: space-between;
+  border-top: 2px solid #000; /* Borde encima de las columnas */
 }
 
 .column {
   flex: 1;
   margin: 5%;
+  position: relative;
+}
+
+.column::before,
+.column::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px; /* Ancho del borde */
+  height: 100%;
+  background-color: #000; /* Color del borde */
+}
+
+.column::before {
+  left: 0;
+}
+
+.column::after {
+  right: 0;
 }
 
 #collage {
   display: block;
-  margin: auto; /* Centra horizontalmente */
-  max-width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
-  height: auto; /* Permite que la altura se ajuste automáticamente */
+  margin: auto;
+  max-width: 100%;
+  height: auto;
   padding-bottom: 5%;
 }
 
@@ -363,6 +396,7 @@ h3 {
   width: 100%;
   background-color: #785c84;
 }
+
 .pie-pagina .grupo-1 {
   width: 100%;
   max-width: 1200px;
@@ -372,6 +406,7 @@ h3 {
   grid-gap: 50px;
   padding: 45px 0px;
 }
+
 .pie-pagina .grupo-1 .box figure {
   width: 100%;
   height: 100%;
@@ -379,18 +414,22 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+
 .pie-pagina .grupo-1 .box figure img {
   width: 250px;
 }
+
 .pie-pagina .grupo-1 .box h2 {
   color: #fff;
   margin-bottom: 25px;
   font-size: 20px;
 }
+
 .pie-pagina .grupo-1 .box p {
   color: #efefef;
   margin-bottom: 10px;
 }
+
 .pie-pagina .grupo-1 .red-social a {
   display: inline-block;
   text-decoration: none;
@@ -403,18 +442,42 @@ h3 {
   text-align: center;
   transition: all 300ms ease;
 }
+
 .pie-pagina .grupo-1 .red-social a:hover {
   color: aqua;
 }
+
 .pie-pagina .grupo-2 {
   background-color: #614b6c;
   padding: 15px 10px;
   text-align: center;
   color: #fff;
 }
+
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
+
+#enviar_comentario {
+  font-weight: 700;
+  color: #eceff1;
+  padding: 7.2px 20px; /* Ajusta el padding según el 20% menos */
+  background: #614b6c;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 16.8px; /* Ajusta el tamaño de la fuente según el 20% menos */
+  font-family: "Mommy Talk";
+}
+
+#enviar_comentario:hover {
+  background-color: #e2f1f8;
+  color: #ffbc0e;
+  transform: scale(1.1);
+}
+
+  
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
