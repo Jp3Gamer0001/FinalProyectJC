@@ -1,0 +1,43 @@
+/* recolector de miel banner */
+
+.inicio_contenido {
+    background-color: #fdf1d8;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 3% 0%;
+    font-family: Arial;
+  }
+  
+  #recolector {
+    height: 500px;
+    width: auto;
+    padding: 3%;
+  }
+  
+  #recolector_descripcion {
+    padding: 3% 3% 3% 0;
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #recolector {
+      height: 230px;
+    }
+  
+    #recolector_descripcion {
+      padding: 4%;
+      font-size: 17px;
+    }
+    .inicio_contenido {
+      flex-direction: column;
+      margin: 10% 0%;
+    }
+  }
+  
+  .titulos_centrados {
+    margin: 5% 5% 0% 5%;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Bako Sapi";
+  }

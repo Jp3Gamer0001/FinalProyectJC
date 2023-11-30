@@ -8,8 +8,10 @@
   src: url("../../fonts/BaksoSapi.otf") format("OpenType");
 }
 
-@import "whatsapp.css";
-@import "footer.css";
+@import "./whatsapp.css";
+@import "./footer.css";
+@import "./galeria.css";
+@import "./about_us.css";
 
 * {
   box-sizing: border-box;
@@ -205,7 +207,6 @@ body {
   }
 }
 
-/* Titulo de la galeria */
 .titulos_centrados {
   margin: 5% 5% 0% 5%;
   text-align: center;
@@ -227,7 +228,7 @@ div.gallery {
   width: 300px;
   font-family: "Bako Sapi";
   margin: 4% 3% 4% 3%;
-  text-align: center; /* Centra el contenido horizontalmente */
+  text-align: center; 
   background-color: #fdf1d8;
 }
 
@@ -246,7 +247,6 @@ div.desc {
   background-color: #fdf1d8;
 }
 
-/* Estilos para dispositivos móviles (menos de 768px) */
 @media (max-width: 768px) {
   .titulos_centrados {
     margin: 8% 8% 2% 8%;
@@ -254,12 +254,12 @@ div.desc {
   }
 
   #productos {
-    flex-direction: column; /* Muestra los contenedores uno encima del otro */
+    flex-direction: column; 
   }
 
   div.gallery {
-    margin: 5% auto; /* Centra horizontalmente y ajusta al ancho de la pantalla */
-    width: 60%; /* Opcional: ajusta el ancho de los contenedores para dispositivos móviles */
+    margin: 5% auto;
+    width: 60%; 
   }
 }
 
@@ -301,17 +301,17 @@ div.desc {
 
 .about_us {
   background-image: url(../../img/Finca_blur.png);
-  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-  background-position: center; /* Centra la imagen dentro del contenedor */
+  background-size: cover; 
+  background-position: center; 
   height: 300px;
 }
 
 .about_us,
 #About_us_banner {
   display: block;
-  margin: auto; /* Centra horizontalmente */
-  max-width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
-  height: auto; /* Permite que la altura se ajuste automáticamente */
+  margin: auto; 
+  max-width: 100%; 
+  height: auto;
 }
 
 .Nuestra_Historia{
@@ -337,7 +337,7 @@ h3 {
   font-family: "Bako Sapi";
 }
 
-/* Estilos para Mision y Visión */
+
 #historia,
 h3,
 p {
@@ -351,11 +351,11 @@ h3 {
   font-size: 30px;
 }
 
-/* Crear columnas */
+
 .column-container {
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid #000; /* Borde encima de las columnas */
+  border-top: 2px solid #000; 
 }
 
 .column {
@@ -369,9 +369,9 @@ h3 {
   content: "";
   position: absolute;
   top: 0;
-  width: 2px; /* Ancho del borde */
+  width: 2px; 
   height: 100%;
-  background-color: #000; /* Color del borde */
+  background-color: #000; 
 }
 
 .column::before {
@@ -392,12 +392,12 @@ h3 {
 
 /* Pie de pagina */
 
-.pie-pagina {
+.pie_pagina {
   width: 100%;
   background-color: #785c84;
 }
 
-.pie-pagina .grupo-1 {
+.pie_pagina .grupo-1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -407,7 +407,7 @@ h3 {
   padding: 45px 0px;
 }
 
-.pie-pagina .grupo-1 .box figure {
+.pie_pagina .grupo-1 .box figure {
   width: 100%;
   height: 100%;
   display: flex;
@@ -415,22 +415,22 @@ h3 {
   align-items: center;
 }
 
-.pie-pagina .grupo-1 .box figure img {
+.pie_pagina .grupo-1 .box figure img {
   width: 250px;
 }
 
-.pie-pagina .grupo-1 .box h2 {
+.pie_pagina .grupo-1 .box h2 {
   color: #fff;
   margin-bottom: 25px;
   font-size: 20px;
 }
 
-.pie-pagina .grupo-1 .box p {
+.pie_pagina .grupo-1 .box p {
   color: #efefef;
   margin-bottom: 10px;
 }
 
-.pie-pagina .grupo-1 .red-social a {
+.pie_pagina .grupo-1 .red-social a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -443,31 +443,31 @@ h3 {
   transition: all 300ms ease;
 }
 
-.pie-pagina .grupo-1 .red-social a:hover {
+.pie_pagina .grupo-1 .red-social a:hover {
   color: aqua;
 }
 
-.pie-pagina .grupo-2 {
+.pie_pagina .grupo-2 {
   background-color: #614b6c;
   padding: 15px 10px;
   text-align: center;
   color: #fff;
 }
 
-.pie-pagina .grupo-2 small {
+.pie_pagina .grupo-2 small {
   font-size: 15px;
 }
 
 #enviar_comentario {
   font-weight: 700;
   color: #eceff1;
-  padding: 7.2px 20px; /* Ajusta el padding según el 20% menos */
+  padding: 7.2px 20px; 
   background: #614b6c;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  font-size: 16.8px; /* Ajusta el tamaño de la fuente según el 20% menos */
+  font-size: 16.8px; 
   font-family: "Mommy Talk";
 }
 
@@ -479,7 +479,7 @@ h3 {
 
   
 @media screen and (max-width: 800px) {
-  .pie-pagina .grupo-1 {
+  .pie_pagina .grupo-1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
